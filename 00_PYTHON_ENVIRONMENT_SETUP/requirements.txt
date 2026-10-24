@@ -1,0 +1,17 @@
+# Python packages for the lab folders.
+# Most exercises use the standard library only.
+
+# --- Used by the labs ---
+hypercorn          # HTTP/2 server (02_HTTP/02_06_HTTP_HOL)
+aiosmtpd           # local mail server (03_SMTP)
+
+# --- Only for the old scripts in _archivio/ ---
+requests
+httpx[http2]
+h2
+flask
+scapy
+psutil
+numpy
+matplotlib
+dnspython
