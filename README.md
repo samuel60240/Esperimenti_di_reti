@@ -11,10 +11,6 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
 - [Requisiti e Prerequisiti](#-requisiti-e-prerequisiti)
 - [Guida all'Esecuzione dei Laboratori](#-guida-allesecuzione-dei-laboratori)
   - [1. Programmazione Socket (UDP & TCP)](#1-programmazione-socket-udp--tcp)
-  - [2. Diagnostica e Tracciamento (ICMP & Ping)](#2-diagnostica-e-tracciamento-icmp--ping)
-  - [3. Analisi di Rete con Wireshark](#3-analisi-di-rete-con-wireshark)
-- [Gestione dell'Ambiente di Sviluppo](#-gestione-dellambiente-di-sviluppo)
-- [Note sull'Aggiornamento del Fork](#-note-sullaggiornamento-del-fork)
 
 ---
 
@@ -24,14 +20,6 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
   - Socket UDP (`SOCK_DGRAM`) e socket TCP (`SOCK_STREAM`).
   - Gestione del ciclo di vita dei socket: `bind()`, `sendto()`, `recvfrom()`, `encode()`, `decode()`.
   - Manipolazione di stringhe e byte in transito.
-- **Protocolli e Diagnostica di Rete:**
-  - Analisi del traffico ICMP tramite `ping` e `traceroute`.
-  - Ispezione dei pacchetti, analisi dei flag TCP (SACK, Timestamps) e traffico HTTP/DNS tramite **Wireshark**.
-  - Misurazione delle prestazioni di rete tramite **iPerf**.
-- **DevOps e Modello Git:**
-  - Configurazione dell'ambiente di lavoro su sistemi **Linux / Dual-Boot**.
-  - Flusso di lavoro Fork-Clone-Upstream per l'integrazione del materiale didattico.
-
 ---
 
 ## 📂 Struttura del Repository
@@ -39,15 +27,8 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
 ```text
 .
 ├── 00_PYTHON_ENVIRONMENT/   # Configurazione e test dell'ambiente Python (venv)
-├── 01_INTRO_WIRESHARK/       # Moduli ed esercitazioni di cattura pacchetti
-├── 01b_THROUGHPUT_IPERF/     # Misurazioni di throughput e banda di rete
-├── 02_HTTP/                 # Analisi delle richieste/risposte HTTP
-├── 03_SMTP/                 # Esperimenti sul protocollo di posta elettronica
-├── 04_DNS/                  # Analisi e risoluzione dei nomi di dominio
-├── 05_SOCKET/               # Script Client/Server UDP e TCP in Python
-├── 06_SCAPY/                # Manipolazione di pacchetti a basso livello con Scapy
-├── 07_RDT/                  # Implementazione di protocolli di Trasferimento Dati Affidabile
-├── 08_TCP_SACK_TS/          # Analisi dei meccanismi TCP SACK e Timestamps
+├── UDPTest/                 # Configurazione e test di un serve e un cliente con protocollo di comunicazione UDP
+├── TCPTest/
 └── README.md                # Documentazione del progetto
 ```
 
@@ -71,11 +52,11 @@ Per testare la comunicazione Client-Server basata su socket UDP:
 
 1. **Avviare il Server:** Aprire un terminale e lanciare lo script del server:
    ```bash
-   python3 05_SOCKET/UDPServer.py
+   python3 UDPTest/UDPServer.py
    ```
 2. **Avviare il Client:** Aprire un secondo terminale separato e lanciare il client:
    ```bash
-   python3 05_SOCKET/UDPClient.py
+   python3 05_UDPTest/UDPClient.py
    ```
 3. Inserire il testo richiesto nel client per osservare la risposta inviata ed elaborata dal server.
 
