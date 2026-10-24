@@ -27,11 +27,11 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
 ```text
 .
 ├── 00_PYTHON_ENVIRONMENT/   # Configurazione e test dell'ambiente Python (venv)
-├── UDPTest/                 # Configurazione e test di un serve e un cliente con protocollo di comunicazione UDP
-├── TCPTest/
+├── UDPTest/                 # Configurazione e test di un server e un cliente con protocollo di comunicazione UDP
+├── TCPTest/                 # Configurazione e test di un server e un cliente con protocollo di comunicazione TCP
 └── README.md                # Documentazione del progetto
 ```
-
+  
 ---
 
 ## 🛠️ Requisiti e Prerequisiti
@@ -56,7 +56,7 @@ Per testare la comunicazione Client-Server basata su socket UDP:
    ```
 2. **Avviare il Client:** Aprire un secondo terminale separato e lanciare il client:
    ```bash
-   python3 05_UDPTest/UDPClient.py
+   python3 0UDPTest/UDPClient.py
    ```
 3. Inserire il testo richiesto nel client per osservare la risposta inviata ed elaborata dal server.
 
