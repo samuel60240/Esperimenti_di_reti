@@ -56,7 +56,7 @@ Per testare la comunicazione Client-Server basata su socket UDP:
    ```
 2. **Avviare il Client:** Aprire un secondo terminale separato e lanciare il client:
    ```bash
-   python3 0UDPTest/UDPClient.py
+   python3 UDPTest/UDPClient.py
    ```
 3. Inserire il testo richiesto nel client per osservare la risposta inviata ed elaborata dal server.
 
