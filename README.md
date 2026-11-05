@@ -4,7 +4,7 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
 
 ---
 
-## 📌 Indice dei Contenuti
+##  Indice dei Contenuti
 
 - [Competenze e Concetti Chiave](#-competenze-e-concetti-chiave)
 - [Struttura del Repository](#-struttura-del-repository)
@@ -14,7 +14,7 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
 
 ---
 
-## 🎯 Competenze e Concetti Chiave
+##  Competenze e Concetti Chiave
 
 - **Programmazione di Rete in Python:**
   - Socket UDP (`SOCK_DGRAM`) e socket TCP (`SOCK_STREAM`).
@@ -22,7 +22,7 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
   - Manipolazione di stringhe e byte in transito.
 ---
 
-## 📂 Struttura del Repository
+##  Struttura del Repository
 
 ```text
 .
@@ -34,7 +34,7 @@ Repository dedicato alla raccolta di esercitazioni, script e test pratici svolti
   
 ---
 
-## 🛠️ Requisiti e Prerequisiti
+##  Requisiti e Prerequisiti
 
 Per eseguire gli script e gli esperimenti è necessario disporre di:
 
@@ -44,7 +44,7 @@ Per eseguire gli script e gli esperimenti è necessario disporre di:
 
 ---
 
-## 🚀 Guida all'Esecuzione dei Laboratori
+##  Guida all'Esecuzione dei Laboratori
 
 ### 1. Programmazione Socket (UDP & TCP)
 
@@ -80,7 +80,7 @@ ping -c 4 8.8.8.8
 
 ---
 
-## 🐍 Gestione dell'Ambiente di Sviluppo
+##  Gestione dell'Ambiente di Sviluppo
 
 Attivazione dell'ambiente virtuale Python prima di eseguire gli script:
 
@@ -94,7 +94,7 @@ deactivate
 
 ---
 
-## 🔄 Note sull'Aggiornamento del Fork
+##  Note sull'Aggiornamento del Fork
 
 Se il repository fa riferimento a un progetto docente originario, per sincronizzare le ultime modifiche locali mantenendo aggiornato il proprio lavoro:
 
